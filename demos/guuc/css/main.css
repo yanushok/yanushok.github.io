@@ -38,7 +38,8 @@ body {
   background-color: #d34346; }
 
 .section-header-blue {
-  background-color: #314559; }
+  background-color: #314559;
+  z-index: 10; }
 
 .section-header-red h2, .section-header-blue h2 {
   padding-left: 30px;
