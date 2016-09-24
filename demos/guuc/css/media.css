@@ -1,0 +1,130 @@
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .features {
+    padding: 65px 0; }
+    .features i {
+      font-size: 26px; }
+    .features .feat-item {
+      width: 80%; }
+      .features .feat-item h3 {
+        font-size: 18px; }
+  .about-us h3 + ul li {
+    padding-left: 0; }
+    .about-us h3 + ul li i {
+      margin-right: 5px; }
+  .services .feat p {
+    font-size: 13px;
+    margin-bottom: 30px; }
+  .contact-form h3.address {
+    margin-top: 45px; }
+  .contact-form .wrap {
+    min-height: 100px; }
+    .contact-form .wrap h4, .contact-form .wrap p, .contact-form .wrap span.symbol, .contact-form .wrap a {
+      font-size: 18px; }
+  .see-our-prices .tariffs div.buy-now {
+    margin-bottom: 30px; }
+  .see-our-prices .news form {
+    margin-top: 20px; } }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 991px) {
+  .main-head .main-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #bd2d30;
+    top: 90px;
+    z-index: 100; }
+    .main-head .main-menu li {
+      float: none;
+      text-align: right; }
+      .main-head .main-menu li a {
+        padding: 10px 15px 10px 110px; }
+        .main-head .main-menu li a:hover {
+          background-color: #d34346; }
+  .features {
+    padding: 50px 0; }
+    .features i {
+      font-size: 60px;
+      top: -10px; }
+    .features .feat-item {
+      width: 80%;
+      margin-bottom: 15px; }
+      .features .feat-item h3 {
+        font-size: 22px; }
+  .clear {
+    clear: both; }
+  .about-us .container > .row > div[class|="col"] {
+    margin-top: 30px; }
+    .about-us .container > .row > div[class|="col"]:first-child {
+      margin-top: 0; }
+  .about-us h3 + ul li {
+    padding-left: 15px; }
+    .about-us h3 + ul li i {
+      margin-right: 15px; }
+  .meet-the-team .row:last-child {
+    margin-bottom: 30px; }
+  .meet-the-team .photo {
+    margin-bottom: 35px; }
+    .meet-the-team .photo h4 {
+      font-size: 24px;
+      line-height: 28px; }
+    .meet-the-team .photo h5 {
+      font-size: 16px; }
+  .services .feat i {
+    font-size: 62px; }
+  .services .feat h3 {
+    font-size: 26px; }
+  .services .feat p {
+    font-size: 15px; }
+  .services .charts {
+    margin-top: 30px; }
+  .contact-form input[type="text"]:last-child {
+    margin-bottom: 30px; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /*Disable Animation on Mobile Devices*/
+  .animated {
+    /*CSS transitions*/
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    /*CSS transforms*/
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    animation: none !important; }
+  .main-slider .arrow {
+    display: none; }
+  .meet-the-team .photo {
+    margin-bottom: 40px; }
+    .meet-the-team .photo h4 {
+      font-size: 30px;
+      line-height: 36px; }
+    .meet-the-team .photo h5 {
+      font-size: 18px; }
+  .services .feat i {
+    font-size: 80px; }
+  .services .feat h3 {
+    font-size: 28px; }
+  .services .feat p {
+    font-size: 16px;
+    text-align: center; }
+  .see-our-prices .tariffs .section-header h2 {
+    font-size: 24px; } }
+
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  .main-menu {
+    display: block !important; } }
+
+/* Large Devices, Wide Screens */
