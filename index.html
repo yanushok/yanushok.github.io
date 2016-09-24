@@ -6,17 +6,34 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400" rel="stylesheet">
 
     <style>
+        html, body {
+            height: 100%;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: 'Raleway', sans-serif;
         }
 
         .main {
-            width: 300px;
+        	width: 100%;
             text-align: center;
-            border: 10px solid #eee;
-            font-size: 1.5em;
-            line-height: 1.5em;
-            margin: 70px auto;
+            background-color: #eee;
+            font-size: 3em;
+            font-weight: 200;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: table;
+            padding: 60px;
         }
     </style>
 </head>
