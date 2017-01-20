@@ -1,0 +1,194 @@
+html, body {
+  height: 100%; }
+
+body {
+  min-width: 360px;
+  font-size: 16px; }
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
+.small-star {
+  background: url("../images/small-stars.png");
+  position: absolute;
+  width: 12px;
+  height: 12px; }
+
+.small-star.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s; }
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+  50% {
+    -webkit-transform: scale3d(0.4, 0.4, 0.4);
+    transform: scale3d(0.4, 0.4, 0.4); }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+  50% {
+    -webkit-transform: scale3d(0.4, 0.4, 0.4);
+    transform: scale3d(0.4, 0.4, 0.4); }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+
+@-webkit-keyframes astro {
+  0% {
+    -webkit-transform: rotate(-1deg); }
+  50% {
+    -webkit-transform: rotate(1deg); }
+  100% {
+    -webkit-transform: rotate(-1deg); } }
+
+@keyframes astro {
+  0% {
+    -webkit-transform: rotate(-1deg); }
+  50% {
+    -webkit-transform: rotate(1deg); }
+  100% {
+    -webkit-transform: rotate(-1deg); } }
+
+@-webkit-keyframes astro-hands {
+  0% {
+    -webkit-transform: rotate(-5deg); }
+  50% {
+    -webkit-transform: rotate(5deg); }
+  100% {
+    -webkit-transform: rotate(-5deg); } }
+
+@keyframes astro-hands {
+  0% {
+    -webkit-transform: rotate(-5deg); }
+  50% {
+    -webkit-transform: rotate(5deg); }
+  100% {
+    -webkit-transform: rotate(-5deg); } }
+
+#wrapper {
+  position: relative;
+  min-height: 100%;
+  background: #001128 url("../images/background.png") center center;
+  overflow: hidden;
+  padding-top: 25px; }
+  #wrapper .logo {
+    position: relative;
+    z-index: 1000; }
+  #wrapper .astronaut {
+    width: 260px;
+    height: 460px;
+    -webkit-transform-origin: 150% -150%;
+        -ms-transform-origin: 150% -150%;
+            transform-origin: 150% -150%;
+    -webkit-animation: astro 7s infinite ease-in-out;
+            animation: astro 7s infinite ease-in-out;
+    position: relative;
+    left: 50px;
+    z-index: 1000; }
+    #wrapper .astronaut img {
+      display: block;
+      position: absolute; }
+    #wrapper .astronaut .astro {
+      width: 257px;
+      height: 455px; }
+    #wrapper .astronaut .astro-right {
+      width: 141px;
+      height: 88px;
+      top: 125px;
+      left: 215px;
+      -webkit-animation: astro-hands 7s infinite ease-in-out;
+              animation: astro-hands 7s infinite ease-in-out;
+      -webkit-transform-origin: left 70%;
+          -ms-transform-origin: left 70%;
+              transform-origin: left 70%; }
+    #wrapper .astronaut .astro-left {
+      width: 73px;
+      height: 119px;
+      top: 20px;
+      left: 40px;
+      -webkit-animation: astro-hands 7s infinite ease-in-out;
+              animation: astro-hands 7s infinite ease-in-out;
+      -webkit-transform-origin: right bottom;
+          -ms-transform-origin: right bottom;
+              transform-origin: right bottom; }
+  #wrapper .astro-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #5898B3;
+    border: none;
+    padding: 8px 30px;
+    color: white;
+    font-family: Verdana;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    -webkit-box-shadow: 0 2px 0 0 #256580;
+            box-shadow: 0 2px 0 0 #256580;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+    outline: none; }
+    #wrapper .astro-button:hover {
+      background-color: #6da5bd; }
+  #wrapper .astro-button-yellow {
+    background-color: #D8940E;
+    -webkit-box-shadow: 0 2px 0 0 #906309;
+            box-shadow: 0 2px 0 0 #906309; }
+    #wrapper .astro-button-yellow:hover {
+      background-color: #f0a615; }
+  #wrapper .astro-button-group {
+    position: fixed;
+    width: 100%;
+    bottom: 20px;
+    z-index: 1001; }
+
+@media screen and (max-width: 991px) {
+  #wrapper .astronaut {
+    width: 208px;
+    height: 368px; }
+    #wrapper .astronaut .astro {
+      width: 205px;
+      height: 364px; }
+    #wrapper .astronaut .astro-right {
+      width: 113px;
+      height: 70px;
+      top: 100px;
+      left: 172px; }
+    #wrapper .astronaut .astro-left {
+      width: 58px;
+      height: 95px;
+      top: 16px;
+      left: 32px; } }
+
+@media screen and (max-width: 767px) {
+  #wrapper .astronaut {
+    width: 156px;
+    height: 276px;
+    left: 10px; }
+    #wrapper .astronaut .astro {
+      width: 154px;
+      height: 273px; }
+    #wrapper .astronaut .astro-right {
+      width: 85px;
+      height: 53px;
+      top: 75px;
+      left: 129px; }
+    #wrapper .astronaut .astro-left {
+      width: 44px;
+      height: 71px;
+      top: 12px;
+      left: 24px; } }
