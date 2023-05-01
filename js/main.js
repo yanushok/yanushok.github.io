@@ -89,7 +89,7 @@ function main() {
     time *= 0.001; // конвертировать время в секунды
 
     cloudParticles.forEach((p) => {
-      p.rotation.z -= 0.002;
+      p.rotation.z -= 0.0002;
     });
     rainGeo.vertices.forEach((p) => {
       p.velocity -= 0.1 + Math.random() * 0.1;
